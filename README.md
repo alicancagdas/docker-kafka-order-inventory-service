@@ -1,6 +1,6 @@
 # Mikroservis Projesi
 
-Bu proje, **Inventory Service** ve **Order Service** adlı iki mikroservisi içerir. Bu servisler, Apache Kafka kullanarak haberleşir ve MongoDB veritabanını kullanır. Docker ve Docker Compose kullanılarak kolayca dağıtılabilir ve çalıştırılabilir.
+Bu proje, **Inventory Service** ve **Order Service** adlı iki mikroservisi içerir. Bu servisler, Apache Kafka kullanarak haberleşir ve MongoDB veritabanını kullanır. Docker ve Docker Compose kullanılarak kolayca dağıtılabilir ve çalıştırılabilir. docker-compose up --build komutuyla derleyip çalıştırabilirsiniz servisleriniizi docker desktop üzerindne kolayca kontrol edebilir ve yönetebilirsniz. 
 
 ## İçindekiler
 
