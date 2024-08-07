@@ -25,7 +25,7 @@ Bu proje, Docker ve Docker Compose kullanarak hızlıca başlatılabilir.
 ### Adım 1: Depoyu Klonlayın
 
 Öncelikle bu projeyi bilgisayarınıza klonlayın:
-git clone https://github.com/alicancagdas1/mikroservis-projesi.git
+git clone (https://github.com/alicancagdas/docker-kafka-order-inventory-service.git)
 
 cd mikroservis-projesi
 
