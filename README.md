@@ -27,32 +27,30 @@ Bu proje, Docker ve Docker Compose kullanarak hızlıca başlatılabilir.
 ### Adım 1: Depoyu Klonlayın
 
 Öncelikle bu projeyi bilgisayarınıza klonlayın:
-
-```bash
 git clone https://github.com/alicancagdas1/mikroservis-projesi.git
+
 cd mikroservis-projesi
+
 Adım 2: Docker Compose İle Başlatın
 Docker Compose kullanarak tüm servisleri başlatın:
-
-bash
-Kodu kopyala
 docker-compose up -d
 Bu komut, tüm servisleri arka planda başlatacaktır.
 
 Adım 3: Docker Hub'dan İmajları Çekin
 Alternatif olarak, Docker Hub'dan imajları manuel olarak çekebilirsiniz:
-
-bash
-Kodu kopyala
 docker pull alicancagdas1/inventory-service:latest
 docker pull alicancagdas1/order-service:latest
+
+
 Kullanım
 Inventory Service
 URL: http://localhost:8081
 Kullanım: Ürün stoklarını yönetmek için kullanılır.
+
 Order Service
 URL: http://localhost:8082
 Kullanım: Siparişleri yönetmek ve stok güncellemelerini tetiklemek için kullanılır.
+
 Servisler
 Inventory Service
 Bu servis, ürünlerin stok yönetimini sağlar ve Kafka üzerinden sipariş güncellemelerini dinler.
@@ -68,8 +66,8 @@ Kodu kopyala
   "productNumber": "prod1",
   "quantity": 100
 }
-Stok Bilgisi Alma:
 
+Stok Bilgisi Alma:
 GET /inventory/:productNumber
 Tüm Stokları Listeleme:
 
@@ -79,7 +77,6 @@ Bu servis, siparişlerin oluşturulmasını ve iptal edilmesini sağlar.
 
 API Uç Noktaları
 Sipariş Oluşturma:
-
 POST /orders
 Body:
 json
@@ -89,9 +86,10 @@ Kodu kopyala
   "quantity": 5,
   "orderType": "CREATE"
 }
-Sipariş İptali:
 
+Sipariş İptali:
 DELETE /orders/:orderNumber
+
 API Dökümantasyonu
 Postman veya benzeri bir araç kullanarak yukarıdaki API uç noktalarını test edebilirsiniz. Detaylı API dökümantasyonu ilerleyen zamanlarda eklenecektir.
 
