@@ -9,9 +9,7 @@ Bu proje, **Inventory Service** ve **Order Service** adlı iki mikroservisi içe
 - [Kurulum](#kurulum)
 - [Kullanım](#kullanım)
 - [Servisler](#servisler)
-- [API Dökümantasyonu](#api-dökümantasyonu)
-- [Katkıda Bulunma](#katkıda-bulunma)
-- [Lisans](#lisans)
+
 
 ## Başlangıç
 
