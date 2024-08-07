@@ -45,7 +45,6 @@ docker pull alicancagdas1/order-service:latest
 
 Inventory Service
 URL: http://localhost:8081
-
 Kullanım: Ürün stoklarını yönetmek için kullanılır.
 
 ## Order Service
@@ -56,8 +55,8 @@ Kullanım: Siparişleri yönetmek ve stok güncellemelerini tetiklemek için kul
 Bu servis, ürünlerin stok yönetimini sağlar ve Kafka üzerinden sipariş güncellemelerini dinler.
 
 ##  API Uç Noktaları
-Stok Ekleme:
 
+Stok Ekleme:
 POST /inventory
 Body:
 json
@@ -69,13 +68,15 @@ Kodu kopyala
 
 Stok Bilgisi Alma:
 GET /inventory/:productNumber
-Tüm Stokları Listeleme:
 
+Tüm Stokları Listeleme:
 GET /inventory
+
 Order Service
 Bu servis, siparişlerin oluşturulmasını ve iptal edilmesini sağlar.
 
 API Uç Noktaları
+
 Sipariş Oluşturma:
 POST /orders
 Body:
